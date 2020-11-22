@@ -1,0 +1,756 @@
+
+
+/*laptop view*/
+@media screen and (min-width:769px) {
+
+
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+html,body{
+	
+	height:100%;
+	box-sizing: border-box;
+}
+
+#wrapper{
+
+margin:auto;
+width:100%;
+min-height: 100%;
+display: grid;
+grid-template-rows: 0% auto 18px;
+box-sizing: border-box; 
+}
+
+.logo{
+
+	 width: 80px;
+	 height: 80px;
+}
+
+/*main block*/
+
+.main-block{
+
+	display: grid;
+	grid-template-columns:14% 86%;
+
+}
+
+/*main-nav*/
+
+.main-block .main-nav{
+
+	max-height: 100%;
+	width: 100%;
+	padding-top: 10px;
+	line-height: 1.2em;
+	background-color: #2f3742;
+	color: #3046fc;
+	font-family: Roboto;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.main-nav ul {
+
+	list-style: none;
+	
+}
+
+.main-nav .current{
+
+	color: white;
+	border-left: blue 5px solid;
+	padding-left: 5px;
+	box-sizing: border-box;
+	
+}
+
+nav ul a{
+	
+	color:#3046fc;
+	text-decoration: none;
+
+}
+
+nav ul a:hover{
+	
+	color: white;
+	
+}
+
+
+nav ul a:active{
+
+	color: cyan;
+}
+
+nav ul li{
+	padding: 10px;
+}
+
+.main-block-customize{
+
+	
+	float: right;
+	/*width: 87%;*/
+	/*min-height: 100%;*/
+	color: black;
+	font-family: Roboto;
+	box-sizing: border-box;
+	display: grid;
+	/*grid-template-rows: 10% 84% 6%;*/
+	grid-template-rows: 65px auto; 
+	/*border:1px red solid;*/
+}
+
+.HTop{
+	margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 8px;
+	width: 20%;
+	box-sizing: border-box;
+	font-family: Rajdhani;
+	border:2px black solid;
+	background-color:#000033;
+	color:#777777;
+	/*height: 15%; */
+	font-size: 13px;
+}
+
+.aboutme, .skills, .experience, .portfolio, .hireme, .contact ,.home, .user-del,.user-add{
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 3%;
+	}
+
+#laaabel button{
+
+text-align: center;
+width: 100%;
+color: white;
+background-color: black;
+border-radius: 3%;
+border-color: grey;
+font-size: 22px;
+
+}
+
+ .user-name label , .pass-word label{
+	color: #777777;
+	display: block;
+	padding-top: 2%;
+	padding-left: 1%; 
+	font-weight: bold;
+}
+
+.user-name , .pass-word{
+	
+	width: 100%;
+	padding-bottom: 0%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.user-name input ,.pass-word input{
+
+	width: 100%;
+	line-height: 1.6em;
+	/*margin-right: 3%;
+	margin-left: 1%;*/
+	box-sizing: border-box;
+}
+
+.Aprofilephoto{
+
+	padding-top: 5px;
+	width: 70px;
+	height: 90px;
+}
+
+/*.photo_selection{
+	display: inline;
+}*/
+
+.show{
+
+display: grid;
+
+
+}
+
+.hide{
+
+display: none;
+
+}
+
+.getin{
+	margin-top: 10px;
+	background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff
+100%); 
+	background-size: 200% auto; 
+	padding: 0px 35px; 
+	color: #222222;
+	font-weight:bold;
+	margin-bottom: 10%;
+
+}
+
+.newbutton{
+	margin-top: 10px;
+	background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff
+100%);
+	background-size: 200% auto;
+	padding: 0px 10px;
+	color: #222222;
+	font-weight:bold;
+	margin-bottom: 22px;
+}
+
+
+
+
+
+.tothetop{
+	
+	padding-top: 10px;
+	width: 100%;
+	height: 80px;
+	/*position: absolute;*/
+	box-sizing: border-box;
+
+}
+
+.tothetop .arrowhead{
+	width:30px;
+	height: 30px;
+	float:right;
+}
+
+
+footer{
+	background-color: #2f3742;
+	width: 100%;
+	color: white;
+	font-size:0.7em;
+	text-align: center;
+	font-style: italic;
+}
+}
+
+
+
+/*phone view*/
+
+@media screen and (max-width:425px) {
+
+
+*{
+	margin:0;
+	padding: 0;
+	font-size: .9rem;
+	scroll-behavior: smooth;
+}
+
+html,body{
+	
+	height:100%;
+	box-sizing: border-box;
+}
+
+/*page wrapper or container*/
+
+#wrapper{
+margin: auto;
+width:100%;
+min-height: 100%;
+display: grid;
+grid-template-rows: 0% auto 18px ;
+
+}
+
+.logo{
+
+	 width: 50px;
+	 height: 50px;
+	 float: left;
+}
+
+/*side navigation menu*/
+
+.main-block{
+	/*min-height: 100%;*/
+	display: grid;
+	grid-template-rows: 108px auto;
+}
+
+.main-nav{
+
+	margin: 0;
+	padding: 3px;
+	padding-right: 20px;
+	line-height: 1.9em;
+	background-color: #2f3742;
+	color: #3046fc;
+	font-family: Roboto;
+	text-align: center;
+	font-weight: bold;
+	word-spacing: 2px;
+	display: grid;
+}
+
+.main-nav ul #weblogo, .main-nav ul #myname{
+	line-height:1.0em;
+	padding-top: 10px;
+
+}
+
+.main-nav .current{
+
+	color: white;
+	border-left: blue 5px solid;
+	padding-left: 5px;
+	box-sizing: border-box;
+	
+}
+
+
+.main-nav ul{
+
+
+	display: grid;
+	grid-template-columns:repeat(4,1fr);
+	grid-gap: 3px;
+	list-style: none;
+	padding-left: 25px;
+	float: right;
+	text-decoration-style: none;
+
+}
+
+
+
+
+nav ul a{
+	
+	color:#3046fc;
+	text-decoration: none;
+
+
+}
+
+nav ul a:hover{
+	
+	color: white;
+	
+}
+
+
+nav ul a:active{
+
+	color: cyan;
+}
+
+
+
+.main-block-customize{
+
+	
+	float: right;
+	/*width: 87%;*/
+	max-height: 100%;
+	color: black;
+	font-family: Roboto;
+	box-sizing: border-box;
+	display: grid;
+	/*grid-template-rows: 10% 84% 6%;*/
+	grid-template-rows: 45px auto; 
+	/*border:1px red solid;*/
+}
+
+.HTop{
+	margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 8px;
+	width: 20%;
+	box-sizing: border-box;
+	font-family: Rajdhani;
+	border:2px black solid;
+	background-color:#000033;
+	color:#777777;
+	/*height: 15%; */
+	font-size: 13px;
+}
+
+.aboutme, .skills, .experience, .portfolio, .hireme, .contact ,.home, .user-del,.user-add{
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 3%;
+	}
+
+
+
+#laaabel button{
+
+text-align: center;
+width: 100%;
+color: white;
+background-color: black;
+border-radius: 3%;
+border-color: grey;
+font-size: 22px;
+
+}
+
+ .user-name label , .pass-word label{
+	color: #777777;
+	display: block;
+	padding-top: 2%;
+	padding-left: 1%; 
+	font-weight: bold;
+}
+
+.user-name , .pass-word{
+	
+	width: 100%;
+	padding-bottom: 0%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.user-name input ,.pass-word input{
+
+	width: 100%;
+	line-height: 1.6em;
+	/*margin-right: 3%;
+	margin-left: 1%;*/
+	box-sizing: border-box;
+}
+
+.Aprofilephoto{
+
+	padding-top: 5px;
+	width: 50px;
+	height: 65px;
+}
+
+/*.photo_selection{
+	display: inline;
+}*/
+
+.show{
+
+display: grid;
+
+
+}
+
+.hide{
+
+display: none;
+
+}
+
+.getin{
+	margin-top: 10px;
+	background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff
+100%); 
+	background-size: 200% auto; 
+	padding: 0px 35px; 
+	color: #222222;
+	font-weight:bold;
+	margin-bottom: 5px;
+}
+
+.newbutton{
+	margin-top: 10px;
+	background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff
+100%);
+	background-size: 200% auto;
+	padding: 0px 10px;
+	color: #222222;
+	font-weight:bold;
+	margin-bottom: 22px;
+}
+
+.tothetop{
+	width: 100%;
+	height: 20%;
+	/*position: absolute;*/
+	box-sizing: border-box;
+
+}
+
+.tothetop .arrowhead{
+	width:30px;
+	height: 30px;
+	float:right;
+}
+
+footer{
+	background-color: #2f3742;
+	width: 100%;
+	color: white;
+	font-size:0.7em;
+	text-align: center;
+	font-style: italic;
+}
+}
+
+/*tablet view*/
+
+
+@media screen and (min-width:426px) and (max-width: 768px) {
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-size: .9rem;
+	scroll-behavior: smooth;
+}
+
+html,body{
+	
+	height:100%;
+	box-sizing: border-box;
+}
+
+#wrapper{
+
+margin:auto;
+width:100%;
+min-height: 100%;
+display: grid;
+grid-template-rows: 0% auto 18px;
+box-sizing: border-box; 
+}
+
+.logo{
+
+	 width: 80px;
+	 height: 80px;
+}
+
+/*main block*/
+
+.main-block{
+
+	display: grid;
+	grid-template-columns:15% 85%;
+
+}
+
+/*main-nav*/
+
+.main-block .main-nav{
+
+	max-height: 100%;
+	width: 100%;
+	padding-top: 10px;
+	line-height: 1.2em;
+	background-color: #2f3742;
+	color: #3046fc;
+	font-family: Roboto;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.main-nav ul {
+
+	list-style: none;
+	
+}
+
+.main-nav .current{
+
+	color: white;
+	border-left: blue 5px solid;
+	padding-left: 5px;
+	box-sizing: border-box;
+	
+}
+
+nav ul a{
+	
+	color:#3046fc;
+	text-decoration: none;
+
+}
+
+nav ul a:hover{
+	
+	color: white;
+	
+}
+
+
+nav ul a:active{
+
+	color: cyan;
+}
+
+nav ul li{
+	padding: 10px;
+}
+
+.main-block-customize{
+
+	
+	float: right;
+	/*width: 87%;*/
+	/*min-height: 100%;*/
+	color: black;
+	font-family: Roboto;
+	box-sizing: border-box;
+	display: grid;
+	/*grid-template-rows: 10% 84% 6%;*/
+	grid-template-rows: 45px auto; 
+	/*border:1px red solid;*/
+}
+
+.HTop{
+	margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 8px;
+	width: 20%;
+	box-sizing: border-box;
+	font-family: Rajdhani;
+	border:2px black solid;
+	background-color:#000033;
+	color:#777777;
+	/*height: 15%; */
+	font-size: 13px;
+}
+
+.aboutme, .skills, .experience, .portfolio, .hireme, .contact ,.home, .user-del,.user-add{
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 3%;
+	}
+
+
+#laaabel button{
+
+text-align: center;
+width: 100%;
+color: white;
+background-color: black;
+border-radius: 3%;
+border-color: grey;
+font-size: 22px;
+
+}
+
+ .user-name label , .pass-word label{
+	color: #777777;
+	display: block;
+	padding-top: 2%;
+	padding-left: 1%; 
+	font-weight: bold;
+}
+
+.user-name , .pass-word{
+	
+	width: 100%;
+	padding-bottom: 0%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.user-name input ,.pass-word input{
+
+	width: 100%;
+	line-height: 1.6em;
+	/*margin-right: 3%;
+	margin-left: 1%;*/
+	box-sizing: border-box;
+}
+
+.Aprofilephoto{
+
+	padding-top: 5px;
+	width: 70px;
+	height: 85px;
+}
+
+/*.photo_selection{
+	display: inline;
+}*/
+
+.show{
+
+display: grid;
+
+
+}
+
+.hide{
+
+display: none;
+
+}
+
+.getin{
+	margin-top: 10px;
+	background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff
+100%); 
+	background-size: 200% auto; 
+	padding: 0px 35px; 
+	color: #222222;
+	font-weight:bold;
+	margin-bottom: 40px;
+}
+
+.newbutton{
+	margin-top: 10px;
+	background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff
+100%);
+	background-size: 200% auto;
+	padding: 0px 10px;
+	color: #222222;
+	font-weight:bold;
+	margin-bottom: 22px;
+}
+
+.tothetop{
+	width: 100%;
+	height: 20%;
+	/*position: absolute;*/
+	box-sizing: border-box;
+
+}
+
+.tothetop .arrowhead{
+	width:30px;
+	height: 30px;
+	float:right;
+}
+
+
+footer{
+	background-color: #2f3742;
+	width: 100%;
+	color: white;
+	font-size:0.7em;
+	text-align: center;
+	font-style: italic;
+}
+}
+
